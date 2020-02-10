@@ -2,7 +2,7 @@
 
 
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://showrss.info/other/shows.rss");  
+ $domOBJ->load("https://www.nasa.gov/rss/dyn/breaking_news.rss");  
  
  $content = $domOBJ->getElementsByTagName("item");
  
