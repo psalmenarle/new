@@ -10,19 +10,20 @@
     <?php
  foreach( $content as $data )
  { ?>
- { 
+ 
 
 
 <?php
    $title = $data->getElementsByTagName("title")->item(0)->nodeValue;
    $link = $data->getElementsByTagName("link")->item(0)->nodeValue;
    $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+   $pubDate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
    echo "
    <ul>
             <h2><a href = '$link'$title </a></h2>
               <ul>
-                  <li>$link </li>
-                  <li>$description</li>
+              <li>$description</li>
+              <li>$pubDate</li>
                   </ul>
     </ul>
             ";
