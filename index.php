@@ -21,7 +21,7 @@
    $pubDate = $data->getElementsByTagName("pubDate")->item(0)->nodeValue;
    echo "
    <ul>
-            <h2>$title</h2>
+            <h2><a href = "$link">$title </a></h2>
               <ul>
                   <li> $description </li>
                   <li> $link </li>
